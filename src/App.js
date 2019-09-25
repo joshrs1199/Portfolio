@@ -10,13 +10,12 @@ import { Route, Switch } from 'react-router-dom'
 const App = () => {
     return(
       <div>
-        <NavBar />
-        <h1>Josh</h1>
+        <NavBar/>
         <Switch>
-          <Route path='/aboutme' component={AboutMe}/>
           <Route path='/resume' component={Resume}/>
           <Route path='/projects' component={Projects}/>
           <Route path='/contact' component={Contact}/>
+          <Route exact path='/' component={AboutMe}/>
         </Switch>
       </div>
     )
